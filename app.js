@@ -5,7 +5,7 @@ const projects = [
     action: "Play Hess Flipper",
     url: "https://hess-flipper.pages.dev/",
     preview: "hess",
-    size: "project--wide",
+    size: "project--hess",
   },
   {
     name: "Exam Recall Trainer",
@@ -13,7 +13,7 @@ const projects = [
     action: "Start recalling",
     url: "https://igcse-exam-recall-trainer.pages.dev/",
     preview: "recall",
-    size: "project--tall",
+    size: "project--recall",
   },
   {
     name: "Exam Semantic Decoder",
@@ -21,7 +21,7 @@ const projects = [
     action: "Decode a question",
     url: "https://exam-semantic-decoder.pages.dev/",
     preview: "decoder",
-    size: "project--short",
+    size: "project--decoder",
   },
 ];
 
