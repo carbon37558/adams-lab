@@ -23,6 +23,14 @@ const projects = [
     preview: "decoder",
     size: "project--decoder",
   },
+  {
+    name: "Bonding Triangle Visualizer",
+    description: "Bonds don't always fit neatly into one box. Put them on the triangle and see where they land.",
+    action: "Plot a bond",
+    url: "https://bonding-triangle-visualizer.pages.dev/",
+    preview: "bonding",
+    size: "project--bonding",
+  },
 ];
 
 const previews = {
@@ -44,6 +52,14 @@ const previews = {
       <div class="decoder-bar"><span class="es-mark">ES</span><b>Exam Semantic Decoder</b><small>Read the question. Activate the concept.</small></div>
       <div class="decoder-heading"><span>EXAM LANGUAGE, DECODED</span><b>See what the question is really asking.</b></div>
       <div class="decoder-workspace"><div class="question-copy"><small>EXAM QUESTION</small><p>Explain why <mark>magnesium oxide has a high melting point</mark>.</p><span>Tap a highlighted phrase to decode it.</span></div><div class="concept-panel"><small>CONCEPT PANEL&nbsp;&nbsp; 解码面板</small><b>High melting point</b><p>Strong electrostatic forces of attraction between oppositely charged ions.</p><em>What the examiner wants you to use</em></div></div>
+    </div>`,
+  bonding: () => `
+    <div class="bonding-preview" aria-hidden="true">
+      <div class="bonding-bar"><b>Bonding Triangle</b><small>Van Arkel–Ketelaar</small></div>
+      <div class="bonding-body">
+        <div class="bonding-controls"><span>ELEMENT A <b>Na</b></span><span>ELEMENT B <b>Cl</b></span><i>PLOT</i></div>
+        <div class="bonding-chart"><span class="bonding-label bonding-label--ionic">IONIC</span><span class="bonding-label bonding-label--metallic">METALLIC</span><span class="bonding-label bonding-label--covalent">COVALENT</span><i class="bonding-point"></i><em>Δ electronegativity</em></div>
+      </div>
     </div>`,
 };
 
