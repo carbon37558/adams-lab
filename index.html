@@ -18,12 +18,67 @@
         <div class="intro-aside">
           <p lang="zh-CN">我教书，也做东西。有时候，这两件事会碰在一起。</p>
           <p>I teach. I make things. Sometimes the two overlap.</p>
-          <a class="about-link" href="https://adams-lab.pages.dev/about.html">About me <span>→</span></a>
+          <button class="about-link" type="button" aria-haspopup="dialog" aria-controls="about-modal">About me <span>→</span></button>
         </div>
       </header>
 
       <section class="projects" id="projects" aria-label="Projects"></section>
     </main>
+
+    <div class="about-modal" id="about-modal" hidden>
+      <section class="about-modal__panel" role="dialog" aria-modal="true" aria-labelledby="about-modal-title" tabindex="-1">
+        <header class="about-modal__header">
+          <h2 id="about-modal-title">About me</h2>
+          <button class="about-modal__close" type="button" aria-label="Close About me">×</button>
+        </header>
+
+        <div class="about-modal__content">
+          <section class="about-modal__opening" aria-label="Introduction">
+            <div>
+              <h3>Adam Sun</h3>
+              <div class="about-modal__intro">
+                <p lang="zh-CN">我教 Chemistry 和 Maths，也已经教了很多年。<br />不过，这大概是这个页面里最没意思的一件事。</p>
+                <p>I teach Chemistry &amp; Maths, and I've been doing it for quite a while.<br />But that's probably the least interesting part of this page.</p>
+              </div>
+            </div>
+            <img src="/public/about/about-hero.jpg" alt="Adam working at a laptop" />
+          </section>
+
+          <section class="about-modal__section about-modal__interests" aria-labelledby="interests-title">
+            <div class="about-modal__section-heading">
+              <h3 id="interests-title">A few things I'm into</h3>
+              <p lang="zh-CN">一些我很喜欢的东西</p>
+            </div>
+            <div class="about-modal__interest-list">
+              <article><h4>Songwriting</h4><p lang="zh-CN">偶尔写歌，而且理由可能很具体。</p><p>Sometimes I write songs, occasionally for very specific reasons.</p></article>
+              <article><h4>Test kitchen</h4><p lang="zh-CN">喜欢给做饭加一些不太合理的限制。</p><p>Cooking under unnecessary constraints.</p></article>
+              <article><h4>Open-world survival craft</h4><p lang="zh-CN">Subnautica / The Planet Crafter 这类游戏会让我消失很久。</p><p>The kind of games I can disappear into for 200+ hours.</p></article>
+            </div>
+          </section>
+
+          <section class="about-modal__section about-modal__places" aria-labelledby="places-title">
+            <div class="about-modal__section-heading">
+              <h3 id="places-title">Digital nomad, allegedly.</h3>
+              <p lang="zh-CN">据说算是个 digital nomad。</p>
+            </div>
+            <div class="about-modal__places-copy">
+              <p lang="zh-CN">我确实在不少怎么看都不太像办公室的地方上过课、做过东西。</p>
+              <p>I've taught and built things from more places than I probably should.</p>
+            </div>
+            <div class="about-modal__photos">
+              <figure><img src="/public/about/tiger-leaping-gorge-yunnan.JPG" alt="Working with a laptop at Tiger Leaping Gorge, Yunnan" /><figcaption>Tiger Leaping Gorge, Yunnan</figcaption></figure>
+              <figure class="about-modal__photo--chiang"><img src="/public/about/chiang-mai.jpg" alt="Working with a laptop in Chiang Mai" /><figcaption>Chiang Mai</figcaption></figure>
+              <figure class="about-modal__photo--shibuya"><img src="/public/about/shibuya-tokyo.jpg" alt="Working with a laptop in Shibuya, Tokyo" /><figcaption>Shibuya, Tokyo</figcaption></figure>
+            </div>
+          </section>
+
+          <section class="about-modal__ending" aria-label="A final note">
+            <p lang="zh-CN">Adam's Lab 里的很多东西，大概都是从同一个念头开始的：<br />“这个有点烦。要不我做个东西。”</p>
+            <p>Most things in Adam's Lab probably started with the same thought:<br />“This is annoying. I should probably make something.”</p>
+          </section>
+        </div>
+      </section>
+    </div>
 
     <footer>
       <p>Adam Sun</p>

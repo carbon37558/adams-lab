@@ -96,3 +96,30 @@ document.querySelector("#projects").innerHTML = projects.map((project) => `
 `).join("");
 
 document.querySelector("#year").textContent = new Date().getFullYear();
+
+const aboutTrigger = document.querySelector(".about-link");
+const aboutModal = document.querySelector("#about-modal");
+const aboutClose = document.querySelector(".about-modal__close");
+
+function openAboutModal() {
+  aboutModal.hidden = false;
+  document.body.classList.add("about-modal-open");
+  aboutClose.focus();
+}
+
+function closeAboutModal() {
+  aboutModal.hidden = true;
+  document.body.classList.remove("about-modal-open");
+  aboutTrigger.focus();
+}
+
+aboutTrigger.addEventListener("click", openAboutModal);
+aboutClose.addEventListener("click", closeAboutModal);
+
+aboutModal.addEventListener("click", (event) => {
+  if (event.target === aboutModal) closeAboutModal();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !aboutModal.hidden) closeAboutModal();
+});
