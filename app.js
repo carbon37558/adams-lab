@@ -31,6 +31,14 @@ const projects = [
     preview: "bonding",
     size: "project--bonding",
   },
+  {
+    name: "Redox Workbench",
+    description: "Redox is easier when you stop trying to balance everything at once.",
+    action: "Open Redox Workbench",
+    url: "https://redox-workbench.pages.dev/",
+    preview: "redox",
+    size: "project--redox",
+  },
 ];
 
 const previews = {
@@ -59,6 +67,19 @@ const previews = {
       <div class="bonding-body">
         <div class="bonding-controls"><span>ELEMENT A <b>Na</b></span><span>ELEMENT B <b>Cl</b></span><i>PLOT</i></div>
         <div class="bonding-chart"><span class="bonding-label bonding-label--ionic">IONIC</span><span class="bonding-label bonding-label--metallic">METALLIC</span><span class="bonding-label bonding-label--covalent">COVALENT</span><i class="bonding-point"></i><em>Δ electronegativity</em></div>
+      </div>
+    </div>`,
+  redox: () => `
+    <div class="redox-preview" aria-hidden="true">
+      <div class="redox-panel">
+        <div class="redox-step">STEP 1</div>
+        <strong>Pair the species</strong>
+        <p class="redox-reaction">MnO<sub>4</sub><sup>−</sup> + I<sup>−</sup> → Mn<sup>2+</sup> + I<sub>2</sub></p>
+        <div class="redox-chips"><b>MnO<sub>4</sub><sup>−</sup></b><b>I<sup>−</sup></b><b>Mn<sup>2+</sup></b><b>I<sub>2</sub></b></div>
+        <div class="redox-halves">
+          <div class="redox-half"><strong>HALF-EQUATION 1</strong><span>REACTANTS</span><i>Drop here</i><em>→</em><span>PRODUCTS</span><i>Drop here</i></div>
+          <div class="redox-half"><strong>HALF-EQUATION 2</strong><span>REACTANTS</span><i>Drop here</i><em>→</em><span>PRODUCTS</span><i>Drop here</i></div>
+        </div>
       </div>
     </div>`,
 };
