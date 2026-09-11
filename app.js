@@ -2,6 +2,7 @@ const projects = [
   {
     name: "Hess Flipper",
     description: "Flip, scale and cancel equations until the Hess cycle works.",
+    descriptionZh: "把 Hess 定律做成一个翻转、倍乘、消去反应式的小游戏。",
     action: "Play Hess Flipper",
     url: "https://hess-flipper.pages.dev/",
     preview: "hess",
@@ -10,6 +11,7 @@ const projects = [
   {
     name: "Exam Recall Trainer",
     description: "Recall the words that earn the marks.",
+    descriptionZh: "把得分点做成“地毯式抽背”，看看你到底有没有真的记住。",
     action: "Start recalling",
     url: "https://igcse-exam-recall-trainer.pages.dev/",
     preview: "recall",
@@ -18,6 +20,7 @@ const projects = [
   {
     name: "Exam Semantic Decoder",
     description: "When every word makes sense, but the question doesn't.",
+    descriptionZh: "每个词都看得懂，但连起来不知道题目在问什么？把关键词和表达拆开，看看它真正要你做什么。",
     action: "Decode a question",
     url: "https://exam-semantic-decoder.pages.dev/",
     preview: "decoder",
@@ -26,6 +29,7 @@ const projects = [
   {
     name: "Bonding Triangle Visualizer",
     description: "Bonds don't always fit neatly into one box. Put them on the triangle and see where they land.",
+    descriptionZh: "化学键不总能乖乖塞进一个分类里，放进三角形里看看它更靠近哪边。",
     action: "Plot a bond",
     url: "https://bonding-triangle-visualizer.pages.dev/",
     preview: "bonding",
@@ -34,10 +38,39 @@ const projects = [
   {
     name: "Redox Workbench",
     description: "Redox is easier when you stop trying to balance everything at once.",
+    descriptionZh: "氧化还原没必要一口气全配平，拆成步骤会清楚很多。",
     action: "Open Redox Workbench",
     url: "https://redox-workbench.pages.dev/",
     preview: "redox",
     size: "project--redox",
+  },
+  {
+    name: "Integration Strategy Trainer",
+    description: "Choose the best first move before you start integrating.",
+    descriptionZh: "先别急着积分，先判断这道题第一步该用什么方法。",
+    action: "Choose a strategy",
+    url: "https://integration-strategy-trainer.pages.dev/",
+    preview: "integration",
+    size: "project--integration",
+  },
+  {
+    name: "Series Strategy Trainer",
+    description: "Learn to spot the best first convergence test.",
+    descriptionZh: "先别急着套判别法，先判断这个级数第一步该试什么。",
+    action: "Choose a test",
+    url: "https://series-strategy-trainer.pages.dev/",
+    preview: "series",
+    size: "project--series",
+  },
+  {
+    name: "Master Class – English Communication Taskbook",
+    displayName: "Master Class",
+    description: "Structured speaking tasks for learners to practise and teachers to use straight away.",
+    descriptionZh: "把公众演说拆成一组可以直接练、直接教的英语沟通任务。",
+    action: "Explore tasks",
+    url: "https://master-class-english-communication-taskbook.pages.dev/",
+    preview: "master",
+    size: "project--master",
   },
 ];
 
@@ -82,14 +115,32 @@ const previews = {
         </div>
       </div>
     </div>`,
+  integration: () => `
+    <div class="integration-preview" aria-hidden="true">
+      <div class="integration-preview__bar"><span>∫</span><b>INTEGRATION STRATEGY</b></div>
+      <div class="integration-preview__body">
+        <small>QUESTION 01</small><strong>∫ (x<sup>2</sup> + 3x) dx</strong><p>What would you try first?</p>
+        <div><b>Direct integration</b><span>u-substitution</span><span>Integration by parts</span></div>
+      </div>
+    </div>`,
+  series: () => `
+    <div class="series-preview" aria-hidden="true">
+      <div class="series-preview__panel"><small>✦ &nbsp; THE SERIES</small><strong>∑ <sup>∞</sup><sub>n = 1</sub> <i>sin n</i> / n</strong><p>Which test is the best first move?</p><div><b>nth term test</b><span>comparison</span><span>ratio test</span><span>alternating series</span></div></div>
+    </div>`,
+  master: () => `
+    <div class="master-preview" aria-hidden="true">
+      <div class="master-preview__heading"><b>Master Class</b><span>English Communication Taskbook</span></div>
+      <div class="master-preview__modules"><i>Public<br />Speaking</i><i>Presentation</i><i>Business<br />English</i><i>Debate</i></div>
+    </div>`,
 };
 
 document.querySelector("#projects").innerHTML = projects.map((project) => `
   <a class="project ${project.size}" href="${project.url}" target="_blank" rel="noreferrer" aria-label="${project.action}: ${project.name}">
     <div class="preview preview--${project.preview}">${previews[project.preview]()}</div>
     <div class="project-copy">
-      <h2>${project.name}</h2>
+      <h2>${project.displayName || project.name}</h2>
       <p>${project.description}</p>
+      <p class="project-copy__zh" lang="zh-CN">${project.descriptionZh}</p>
       <span>${project.action} <b>→</b></span>
     </div>
   </a>
