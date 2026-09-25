@@ -31,7 +31,7 @@ h1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: cla
 .intro-aside p { margin: 0; }
 .intro-aside p + p { color: #74716a; margin-top: 4px; }
 
-.projects { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 38px 24px; align-items: stretch; padding-bottom: 88px; }
+.projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 38px 24px; align-items: stretch; padding-bottom: 88px; }
 .project { color: inherit; display: block; min-width: 0; text-decoration: none; }
 .preview { aspect-ratio: 1.36 / 1; border-radius: 14px; overflow: hidden; box-shadow: 0 1px 0 rgba(28, 26, 22, .12); transition: transform .18s ease; }
 .project:hover .preview, .project:focus-visible .preview { transform: translateY(-2px) scale(1.012); }
