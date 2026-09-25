@@ -229,6 +229,7 @@ function renderVideo(video, featured = false) {
         <h2>${video.title}</h2>
         <p lang="zh-CN">${descriptionZh}</p>
         <p>${descriptionEn}</p>
+        ${featured ? '<div class="featured-links"><a href="/videos">See all videos →</a></div>' : ""}
       </div>
     </div>`;
 }
