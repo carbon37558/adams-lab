@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A little about Adam Sun." />
+    <title>About me — Adam's Lab</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-brand" href="/">Adam's Lab</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/tools">Tools</a>
+        <a href="/videos">Videos</a>
+        <a href="/about" aria-current="page">About me</a>
+      </nav>
+    </header>
+
+    <main class="about-main">
+      <h1 class="page-title">About me</h1>
+      <div class="about-content">
+        <section class="about-opening" aria-label="Introduction">
+          <div>
+            <h2>Adam Sun</h2>
+            <div class="about-intro">
+              <p lang="zh-CN">我教 Chemistry 和 Maths，也已经教了很多年。<br />不过，这大概是这个页面里最没意思的一件事。</p>
+              <p>I teach Chemistry &amp; Maths, and I've been doing it for quite a while.<br />But that's probably the least interesting part of this page.</p>
+            </div>
+          </div>
+          <img src="/public/about/about-hero.jpg" alt="Adam working at a laptop" />
+        </section>
+
+        <section class="about-section about-interests" aria-labelledby="interests-title">
+          <div class="about-section-heading">
+            <h2 id="interests-title">A few things I'm into</h2>
+            <p lang="zh-CN">一些我很喜欢的东西</p>
+          </div>
+          <div class="about-interest-list">
+            <article><h3>Songwriting</h3><p lang="zh-CN">偶尔写歌，而且理由可能很具体。</p><p>Sometimes I write songs, occasionally for very specific reasons.</p></article>
+            <article><h3>Test kitchen</h3><p lang="zh-CN">喜欢给做饭加一些不太合理的限制。</p><p>Cooking under unnecessary constraints.</p></article>
+            <article><h3>Open-world survival craft</h3><p lang="zh-CN">Subnautica / The Planet Crafter 这类游戏会让我消失很久。</p><p>The kind of games I can disappear into for 200+ hours.</p></article>
+          </div>
+        </section>
+
+        <section class="about-section about-places" aria-labelledby="places-title">
+          <div class="about-section-heading">
+            <h2 id="places-title">Digital nomad, allegedly.</h2>
+            <p lang="zh-CN">据说算是个 digital nomad。</p>
+          </div>
+          <div class="about-places-copy">
+            <p lang="zh-CN">我确实在不少怎么看都不太像办公室的地方上过课、做过东西。</p>
+            <p>I've taught and built things from more places than I probably should.</p>
+          </div>
+          <div class="about-photos">
+            <figure><img src="/public/about/tiger-leaping-gorge-yunnan.JPG" alt="Working with a laptop at Tiger Leaping Gorge, Yunnan" /><figcaption>Tiger Leaping Gorge, Yunnan</figcaption></figure>
+            <figure class="about-photo--chiang"><img src="/public/about/chiang-mai.jpg" alt="Working with a laptop in Chiang Mai" /><figcaption>Chiang Mai</figcaption></figure>
+            <figure class="about-photo--shibuya"><img src="/public/about/shibuya-tokyo.jpg" alt="Working with a laptop in Shibuya, Tokyo" /><figcaption>Shibuya, Tokyo</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="about-ending" aria-label="A final note">
+          <p lang="zh-CN">Adam's Lab 里的很多东西，大概都是从同一个念头开始的：<br />“这个有点烦。要不我做个东西。”</p>
+          <p>Most things in Adam's Lab probably started with the same thought:<br />“This is annoying. I should probably make something.”</p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>Adam Sun</p>
+      <p>我是一名国际课程教师，同时偶尔会做一些自己想用的东西。<br />I teach Chemistry &amp; Maths, and sometimes I make things.</p>
+      <p class="copyright">© <span id="year"></span> Adam Sun</p>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

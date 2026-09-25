@@ -1,10 +1,17 @@
 # Adam's Lab
 
-A personal collection of small learning tools made by Adam Sun.
+Things Adam Sun makes around teaching and learning: interactive tools and explainer videos.
+
+## Pages
+
+- `/` — Home and featured work
+- `/tools` — Interactive learning tools
+- `/videos` — Selected explainer videos
+- `/about` — About Adam
 
 ## Local development
 
-Open `index.html` in a browser, or serve this folder with any static-file server.
+Serve this folder with any static-file server to test all four routes.
 
 ## Deployment
 
