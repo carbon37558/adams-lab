@@ -80,6 +80,16 @@ const projects = [
     preview: "master",
     size: "project--master",
   },
+  {
+    id: "reactivity-rogue",
+    name: "Reactivity Rogue",
+    description: "Turn the reactivity series into a roguelike card game: read the signal, play your elements, and keep your stability intact.",
+    descriptionZh: "把金属活动性顺序做成一局 roguelike 卡牌游戏：看信号、出元素牌，还得顾着自己的 stability。",
+    action: "Play Reactivity Rogue",
+    url: "https://reactivity-rogue.pages.dev/",
+    preview: "reactivity-rogue",
+    size: "project--reactivity-rogue",
+  },
 ];
 
 const featuredToolId = "hess-flipper";
@@ -198,6 +208,7 @@ const previews = {
       <div class="master-preview__heading"><b>Master Class</b><span>English Communication Taskbook</span></div>
       <div class="master-preview__modules"><i>Public<br />Speaking</i><i>Presentation</i><i>Business<br />English</i><i>Debate</i></div>
     </div>`,
+  "reactivity-rogue": () => '<img src="/public/tools/reactivity-rogue.jpg" alt="" />',
 };
 
 function renderProject(project) {
